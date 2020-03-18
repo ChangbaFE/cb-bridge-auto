@@ -1,0 +1,185 @@
+{
+    "isInViewPortFn": {
+        "prefix": "commonObj.utils.isInViewPortFn",
+        "body": [
+            "commonObj.utils.isInViewPortFn(${1:ele})"
+        ],
+        "description": "判断元素是否在可视区域"
+    },
+    "openUniversalLink": {
+        "prefix": "commonObj.utils.openUniversalLink",
+        "body": [
+            "commonObj.utils.openUniversalLink(${1:url})"
+        ],
+        "description": "通过UniversalLink实现跳转"
+    },
+    "openApp": {
+        "prefix": "commonObj.utils.openApp",
+        "body": [
+            "commonObj.utils.openApp(${1:stayCurrentPage}, ${2:targetUrl}, ${3:mask}, ${4:downloadUrl})"
+        ],
+        "description": 
+        "唤起唱吧打开某个页面\nstayCurrentPage（Boolean,没装唱吧App的情况下是否停留在当前页面而不跳走）, \n targetUrl（String，目标地址）, \n mask（Zepto DOM对象，遮罩层提示，无法跳走的时候提示用户通过浏览器打开再跳转，用于兼容iOS8及其以下系统版本）,\n downloadUrl（String，App下载页链接）"
+    },
+    "loadScript": {
+        "prefix": "commonObj.utils.loadScript",
+        "body": [
+            "commonObj.utils.loadScript(${1:url}, ${2:()=>{\n\t$0\n}})"
+        ],
+        "description": "载入一份外部的script\n\t - url（script的URL地址）, \n\t - callback（加载完script执行的回调函数）"
+    },
+    "getQueryStrFn": {
+        "prefix": "commonObj.utils.getQueryStrFn",
+        "body": [
+            "commonObj.utils.getQueryStrFn(${1:name}, ${2:url})"
+        ],
+        "description": "获取某个GET参数\n\t - name(GET参数名), \n\t - url（指定URL，若不传，默认为当前的URL）"
+    },
+    "getUserid": {
+        "prefix": "commonObj.utils.getUserid",
+        "body": [
+            "commonObj.utils.getUserid()"
+        ],
+        "description": "获取用户ID"
+    },
+    "base64encode": {
+        "prefix": "commonObj.utils.base64encode",
+        "body": [
+            "commonObj.utils.base64encode(${1:str})"
+        ],
+        "description": "base64编码"
+    },
+    "base64decode": {
+        "prefix": "commonObj.utils.base64decode",
+        "body": [
+            "commonObj.utils.base64decode(${1:str})"
+        ],
+        "description": "base64解码"
+    },
+    "generateVoicecardUrl": {
+        "prefix": "commonObj.utils.generateVoicecardUrl",
+        "body": [
+            "commonObj.utils.generateVoicecardUrl(${1:id(\"心愿卡ID\")})"
+        ],
+        "description": "获取留声卡链接\n\t - wishcardid（心愿卡ID）"
+    },
+    "userid": {
+        "prefix": "commonObj.data.userid",
+        "body": [
+            "commonObj.data.userid"
+        ],
+        "description": "读取用户ID"
+    },
+    "token": {
+        "prefix": "commonObj.data.token",
+        "body": [
+            "commonObj.data.token"
+        ],
+        "description": "获取token"
+    },
+    "ua": {
+        "prefix": "commonObj.browser.ua",
+        "body": [
+            "commonObj.browser.ua"
+        ],
+        "description": "WebView的内核信息"
+    },
+    "isAndroid": {
+        "prefix": "commonObj.browser.isAndroid",
+        "body": [
+            "commonObj.browser.isAndroid"
+        ],
+        "description": "是否是Android系统"
+    },
+    "isUC": {
+        "prefix": "commonObj.browser.isUC",
+        "body": [
+            "commonObj.browser.isUC"
+        ],
+        "description": "是否在UC浏览器中打开"
+    },
+    "isIOS": {
+        "prefix": "commonObj.browser.isIOS",
+        "body": [
+            "commonObj.browser.isIOS"
+        ],
+        "description": "是否是iOS系统"
+    },
+    "isQQorWeChat": {
+        "prefix": "commonObj.browser.isQQorWeChat",
+        "body": [
+            "commonObj.browser.isQQorWeChat"
+        ],
+        "description": "是否在QQ或微信中打开"
+    },
+    "isWeibo": {
+        "prefix": "commonObj.browser.isWeibo",
+        "body": [
+            "commonObj.browser.isWeibo"
+        ],
+        "description": "是否在微博中打开"
+    },
+    "outChangba": {
+        "prefix": "commonObj.data.outChangba",
+        "body": [
+            "commonObj.data.outChangba"
+        ],
+        "description": "是否唱吧App内打开"
+    },
+    "generateBase64Url": {
+        "prefix": "commonObj.utils.generateBase64Url",
+        "body": [
+            "commonObj.utils.generateBase64Url(${1:url})"
+        ],
+        "description": "生成base64URL"
+    },
+    "generateCustomUrl": {
+        "prefix": "commonObj.utils.generateCustomUrl",
+        "body": [
+            "commonObj.utils.generateCustomUrl(${1:url})"
+        ],
+        "description": "生成客户端URL"
+    },
+    "disableScroll": {
+        "prefix": "commonObj.utils.disableScroll",
+        "body": [
+            "commonObj.utils.disableScroll()"
+        ],
+        "description": "禁止页面滚动"
+    },
+    "enableScroll": {
+        "prefix": "commonObj.utils.disableScroll",
+        "body": [
+            "commonObj.utils.enableScroll()"
+        ],
+        "description": "恢复页面滚动"
+    },
+    "htmlspecialchars": {
+        "prefix": "commonObj.utils.htmlspecialchars",
+        "body": [
+            "commonObj.utils.htmlspecialchars(${1:str})"
+        ],
+        "description": "把字符串中的“<”、“>” 等转化为HTML实体"
+    },
+    "resaddstr": {
+        "prefix": "commonObj.utils.resaddstr",
+        "body": [
+            "commonObj.utils.resaddstr"
+        ],
+        "description": "各种资源位时的统计"
+    },
+    "getCookie": {
+        "prefix": "commonObj.utils.getCookie",
+        "body": [
+            "commonObj.utils.getCookie(${1:str})"
+        ],
+        "description": "获取某个cookie值"
+    },
+    "setCookie": {
+        "prefix": "commonObj.utils.setCookie",
+        "body": [
+            "commonObj.utils.setCookie(${1:name},${2:value},${3:seconds},${4:path})"
+        ],
+        "description": "设置某个cookie值\n\t - name（cookie的键名），\n\t - value（cookie的值），\n\t - seconds（cookie过期时间），\n\t - path（cookie保存路径）"
+    }
+}
